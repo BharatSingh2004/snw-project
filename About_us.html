@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Timeless Touch</title>
+    <link rel="stylesheet" href="About_us.css">
+</head>
+<body>
+    <div class="loader"></div>
+    <div class="content">
+        <header class="header">
+            <h1 class="logo"> 
+                <span class="timeless">Timeless</span><span class="touch">Touch.</span>
+            </h1>
+            <h1 class="title">About Us</h1>
+            <p class="intro">Welcome to <span class="highlight">TimelessTouch.</span> — where passion meets craftsmanship in the art of antique restoration.</p>
+        </header>
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>At Timeless Touch , we aim to inspire and educate those who value the beauty of the past. From intricately carved furniture to delicate porcelain heirlooms, our mission is to empower you with the knowledge and tools to breathe life back into your antiques.</p>
+            <blockquote>"Restoration isn’t just a process — it’s a journey into history."</blockquote>
+        </section>
+        <section class="why-us">
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li><span>🌟</span> <strong>Comprehensive Guides:</strong> Step-by-step tutorials to restore everything from wooden artifacts to metalwork and textiles.</li>
+                <li><span>🌟</span> <strong>Expert Insights:</strong> Learn directly from experienced restorers who share their tips, techniques, and trade secrets.</li>
+                <li><span>🌟</span> <strong>Community Support:</strong> Connect with fellow antique lovers, exchange ideas, and seek advice in our vibrant forum.</li>
+            </ul>
+        </section>
+        <footer class="footer">
+    
+            <p class="copyright">&copy; 2024 Timeless Touch. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        
+        window.addEventListener("load", () => {
+            document.querySelector(".loader").classList.add("fade-out");
+            setTimeout(() => {
+                document.querySelector(".loader").style.display = "none";
+                document.querySelector(".content").style.display = "block";
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

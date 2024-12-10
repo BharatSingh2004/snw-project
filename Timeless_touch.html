@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Timeless_touch.css" />
+    <title>Web Design Mastery | SoulTravel</title>
+    <style>
+     
+      body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        font-family: Arial, sans-serif;
+      }
+
+      
+      .background-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; 
+        overflow: hidden;
+      }
+
+      .background-video video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+      }
+
+      
+      nav {
+        position: sticky;
+        top: 0;
+        
+        color: white;
+        padding: 1rem 2rem;
+        z-index: 10; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 1rem;
+      }
+
+      .nav__btns .btn {
+        background-color: white;
+        color: black;
+        border: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        margin-left: 0.5rem;
+      }
+
+      
+      .header__container {
+        position: relative;
+        z-index: 1; 
+        color: white;
+        text-align: center;
+        padding: 4rem 2rem;
+      }
+
+      .header__content h1 {
+        font-size: 2.5rem;
+        margin: 0;
+        color: white;
+      }
+
+      .header__content span {
+        color: #ff9900;
+      }
+
+      .header__content p {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        color: #ddd;
+      }
+
+      .bar {
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="background-video">
+      <video autoplay loop muted playsinline>
+        <source src="home_vid.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">Timeless<span>Touch</span>.</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#"><b>Home</b></a></li>
+        <li><a href="Categories.html"><b>Categories</b></a></li>
+        <li><a href="suggestions.html"><b>Suggestion</b></a></li>
+        <li><a href="About_us.html"><b>About Us</a></li>
+        
+      </ul>
+    </nav>
+
+    
+    <header class="header__container">
+      <div class="header__content">
+        <h1>Bringing Artifacts Back to Their Former Glory.<br />Because Every <span>Antique</span> Deserves a Second Chance.</h1>
+        <p>
+          Whether it's a family heirloom steeped in memories or a forgotten artifact 
+          waiting to shine again, our passion is to guide you in preserving 
+          these timeless pieces for generations to come. Let us take you on a journey of discovery, restoration, and appreciation for the masterpieces of yesterday. 
+        </p>
+    
+        <div class="bar">
+          Copyright © 2024 Timeless. All rights reserved.
+        </div>
+      </div>
+    </header>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="Timeless_touch.js"></script>
+  </body>
+</html>
